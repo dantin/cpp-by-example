@@ -1,0 +1,11 @@
+#!/bin/bash
+
+../noinput main_only.exe
+echo "add:" && ./add.exe < data/add
+../noinput whilecount.exe forcount.exe
+echo "mysum:" && ./mysum.exe < data/mysum
+echo "occurs:" && ./occurs.exe < data/occurs
+echo "item_io:" && ./item_io.exe < data/book_sales
+echo "add_item:" && ./add_item.exe < data/add_item
+echo "add_item2:" && ./add_item2.exe < data/add_item
+echo "avg_price:" && ./avg_price.exe < data/book_sales
