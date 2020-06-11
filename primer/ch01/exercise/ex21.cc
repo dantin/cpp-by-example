@@ -6,9 +6,7 @@ int main()
 {
     Sales_item item1, item2;
 
-    // read a pair of transaction
     std::cin >> item1 >> item2;
-    // print their sum
     std::cout << item1 + item2 << std::endl;
 
     return 0;
