@@ -12,6 +12,6 @@ jobs:
   include:
   - stage: static check
     before_install:
-      - make init
+      - sudo pip install cpplint
     script:
       - make check
