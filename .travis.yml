@@ -1,0 +1,16 @@
+os: linux
+dist: xenial
+env:
+  global:
+    - PATH=/opt/python/3.7.1/bin:$PATH
+
+language: cpp
+
+jobs:
+  include:
+  - stage: static check
+    before_install:
+      - python3 -m pip install --upgrade pip
+      - python3 -m pip install cpplint
+    script:
+      - make check

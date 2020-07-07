@@ -2,8 +2,7 @@
 
 #include "Sales_item.h"
 
-int main()
-{
+int main() {
     Sales_item item1, item2;
 
     // read a pair of transaction

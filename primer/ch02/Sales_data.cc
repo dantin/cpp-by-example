@@ -2,12 +2,11 @@
 #include <string>
 #include "Sales_data.h"
 
-int main()
-{
+int main() {
     Sales_data data1, data2;
 
     // code to read into data1 and data2
-    double price = 0; // price per book, used to calculate total revenue
+    double price = 0;  // price per book, used to calculate total revenue
 
     // read the first transaction: ISBN, number of books sold, price per book
     std::cin >> data1.bookNo >> data1.units_sold >> price;
@@ -33,11 +32,11 @@ int main()
             std::cout << "(no sales)" << std::endl;
         }
 
-        return 0;  // success
+        return 0;   // success
     } else {
         // transactions weren't for the same ISBN
         std::cerr << "Data must refer to the same ISBN"
                   << std::endl;
-        return -1; // fail
+        return -1;  // fail
     }
 }

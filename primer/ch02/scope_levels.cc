@@ -2,8 +2,7 @@
 
 int reused = 42;
 
-int main()
-{
+int main() {
     int unique = 0;
 
     std::cout << reused << " " << unique << std::endl;

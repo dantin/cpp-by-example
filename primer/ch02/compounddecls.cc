@@ -1,7 +1,6 @@
 #include <iostream>
 
-int main()
-{
+int main() {
     // i is an int; p is a pointer to int; r is a reference to int
     int i = 1024, *p = &i, &r = i;
 
