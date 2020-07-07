@@ -10,8 +10,7 @@ jobs:
   include:
   - stage: static check
     before_install:
-      - python3 -VV
-      - pip3 -V
+      - python3 -m pip install --upgrade pip
       - python3 -m pip install cpplint
     script:
       - make check
