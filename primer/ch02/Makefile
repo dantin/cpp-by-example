@@ -1,6 +1,5 @@
-OBJECTS = escape.exe literals.exe unsigned.exe scope_levels.exe \
-		  convs.exe inits.exe ref-ex.exe \
-		  dbl_ptr.exe compounddecls.exe decl-ex.exe\
+OBJECTS = convs.exe unsigned.exe literals.exe escape.exe scope_levels.exe \
+		  inits.exe dbl_ptr.exe compounddecls.exe \
 		  Sales_data.exe
 
 include ../GNU_makefile_template

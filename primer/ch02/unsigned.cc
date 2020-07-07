@@ -17,8 +17,8 @@ int main()
 
     u = 10;
     i = -42;
-    std::cout << i + i << std::endl;
-    std::cout << u + i << std::endl;
+    std::cout << i + i << std::endl; // prints -82
+    std::cout << u + i << std::endl; // if 32-bit ints, prints 4294967264
 
     i = 10;
     std::cout << "good" << std::endl;
@@ -33,7 +33,7 @@ int main()
 
     for (unsigned u = 0; u <= 10; ++u) {
         std::cout << u << std::endl;
-    }
+    } // prints 0 ... 10
 
     /* NOTE: the condition in the following loop
      * will run indifinitely
@@ -41,9 +41,9 @@ int main()
         std::cout << u << std::endl;
     }
     */
-    u = 11;
+    u = 11;  // start the loop one past the first element we want to print
     while (u > 0) {
-        --u;
+        --u; // decrement first, so that the last iteration will print 0
         std::cout << u << std::endl;
     }
 
@@ -57,7 +57,7 @@ int main()
     }
 
     u = 42; u2 = 10;
-    std::cout << u - u2 << std::endl;
+    std::cout << u - u2 << std::endl; // ok: result is 32
     std::cout << u2 - u << std::endl; // ok: but the result will wrap around
 
     return 0;

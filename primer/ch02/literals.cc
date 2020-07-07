@@ -2,8 +2,9 @@
 
 int main()
 {
-    std::cout << "Hello World!";
-    std::cout << "";
+    std::cout << "Hello World!"; // simple character string literal
+    std::cout << "";             // empty character string literal
+    // literal using newlines and tabs
     std::cout << "\nCC\toptions\tfile.[cC]\n";
 
     // mutiline string literal
