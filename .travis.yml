@@ -1,6 +1,11 @@
 os: linux
 dist: xenial
 
+addons:
+  apt:
+    packages:
+      - python3-pip
+
 language: cpp
 
 jobs:
