@@ -3,24 +3,28 @@
 int main()
 {
     int i = 42;
-    std::cout << i << std::endl;
+    std::cout << i << std::endl;  // prints 42
     if (i) { // condition will evaluate as true
         i = 0;
     }
-    std::cout << i << std::endl;
+    std::cout << i << std::endl;  // prints 0
 
-    bool b = 42;
-    std::cout << b << std::endl;
+    bool b = 42;                  // b is true
+    std::cout << b << std::endl;  // prints 1
 
-    int j = b;
-    std::cout << j << std::endl;
+    int j = b;                    // j has value 1
+    std::cout << j << std::endl;  // prints 1
 
-    double pi = 3.14;
-    std::cout << pi << std::endl;
+    double pi = 3.14;             // pi has value 3.14
+    std::cout << pi << std::endl; // prints 3.14
 
-    unsigned char c = -1;
-    i = c;
-    std::cout << i << std::endl;
+    j = pi;                       // j has value 3
+    std::cout << j << std:: endl; // print 3
+
+    unsigned char c = -1;         // assume 8-bit chars, c has value 255
+    i = c;   // the char with value 255 is an unprintable char
+             // assigns value of c (i.e., 255) to an int
+    std::cout << i << std::endl;  // prints 255
 
     return 0;
 }
