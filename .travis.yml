@@ -1,10 +1,8 @@
 os: linux
 dist: xenial
-
-addons:
-  apt:
-    packages:
-      - python3-pip
+env:
+  global:
+    - PATH=/opt/python/3.7.1/bin:$PATH
 
 language: cpp
 
@@ -12,6 +10,8 @@ jobs:
   include:
   - stage: static check
     before_install:
-      - sudo pip install cpplint
+      - python3 -VV
+      - pip3 -V
+      - python3 -m pip install cpplint
     script:
       - make check
