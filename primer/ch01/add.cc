@@ -1,7 +1,6 @@
 #include <iostream>
 
-int main()
-{
+int main() {
     // prompt user to enter two numbers
     std::cout << "Enter two numbers:" << std::endl;
     int v1 = 0, v2 = 0;

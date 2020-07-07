@@ -1,7 +1,6 @@
 #include <iostream>
 
-int main()
-{
+int main() {
     int sum = 0, value = 0;
     // read until end-of-file, calculating a running total of all values read
     while (std::cin >> value) {

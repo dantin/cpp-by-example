@@ -1,7 +1,6 @@
 #include <iostream>
 
-int main()
-{
+int main() {
     // currVal is the number we're counting; we'll read new values into val
     int currVal = 0, val = 0;
 

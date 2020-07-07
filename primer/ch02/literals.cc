@@ -1,9 +1,8 @@
 #include <iostream>
 
-int main()
-{
-    std::cout << "Hello World!"; // simple character string literal
-    std::cout << "";             // empty character string literal
+int main() {
+    std::cout << "Hello World!";  // simple character string literal
+    std::cout << "";              // empty character string literal
     // literal using newlines and tabs
     std::cout << "\nCC\toptions\tfile.[cC]\n";
 
@@ -14,7 +13,7 @@ int main()
     // three ways to print a capital M
     std::cout << 'M' << " " << '\115' << " " << '\x4d' << std::endl;
 
-    unsigned long long bigVal = -1ULL;
+    unsigned long long bigVal = -1ULL;  // NOLINT
     std::cout << bigVal << std::endl;
 
     return 0;

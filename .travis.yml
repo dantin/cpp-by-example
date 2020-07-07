@@ -1,0 +1,12 @@
+os: linux
+dist: xenial
+
+language: cpp
+
+jobs:
+  include:
+  - stage: static check
+    before_install:
+      - make init
+    script:
+      - make check

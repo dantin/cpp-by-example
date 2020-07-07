@@ -2,9 +2,9 @@
 
 #include "Sales_item.h"
 
-int main()
-{
-    Sales_item total; // variable to hold data for the next transaction
+int main() {
+    // variable to hold data for the next transaction
+    Sales_item total;
 
     // read the first transaction and ensure that there are data to process
     if (std::cin >> total) {

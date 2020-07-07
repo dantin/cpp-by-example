@@ -1,7 +1,6 @@
 #include <iostream>
 
-int main()
-{
+int main() {
     int sum = 0;
 
     // sum values from 1 through 10 inclusive
