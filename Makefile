@@ -16,6 +16,7 @@ check:
 			m=`echo $$subdir | cut -d/ -f 2`; \
 			echo -e "  -> '$$m'"; \
 			$(CPPLINT) $(SOURCE_DIR)/$$subdir/*.cc; \
+			$(CPPLINT) $(SOURCE_DIR)/$$subdir/exercise/*.cc; \
 		done
 
 .PHONY: init

@@ -1,12 +1,11 @@
 #include <iostream>
 
-int main()
-{
+int main() {
     int i, sum = 0;
     int begin = 50, end = 100;
 
     i = begin;
-    while(i <= end) {
+    while (i <= end) {
         sum += i;
         i++;
     }

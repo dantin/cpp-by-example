@@ -2,8 +2,7 @@
 
 #include "Sales_item.h"
 
-int main()
-{
+int main() {
     Sales_item currVal, val;
 
     if (std::cin >> currVal) {
