@@ -21,9 +21,12 @@ echo "hexify:" && ./hexify.exe < data/hexify
 ../noinput square.exe
 
 echo "vec_scores:" && ./vec_scores.exe < data/grades
-
+echo "vec_strings:" && ./vec_strings.exe < data/vec_strings
+../noinput vec_subs.exe
 ../noinput binary_search.exe
 
 echo "array_scores:" && ./array_scores.exe < data/grades
+echo "ptr_traversal:" && ./ptr_traversal.exe < data/ptr_traversal
 
 ../noinput cstring_hdr.exe
+../noinput multidim.exe
