@@ -1,7 +1,6 @@
 #include <iostream>
 
-int main()
-{
+int main() {
     int sum = 0, value = 0;
     while (std::cin >> value) {
         sum += value;

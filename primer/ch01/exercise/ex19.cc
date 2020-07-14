@@ -1,8 +1,6 @@
 #include <iostream>
 
-int main()
-{
-
+int main() {
     std::cout << "Enter two numbers:" << std::endl;
     int upper, lower;
     std::cin >> lower >> upper;
@@ -11,7 +9,7 @@ int main()
     i = lower < upper ? lower : upper;
     upper = lower < upper ? upper : lower;
 
-    while(i <= upper) {
+    while (i <= upper) {
         std::cout << i << std::endl;
         i++;
     }

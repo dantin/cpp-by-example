@@ -1,0 +1,29 @@
+#!/bin/bash
+
+echo "io_using:" && ./io_using.exe < data/add
+echo "add_using:" && ./add_using.exe < data/add
+echo "string_io:" && ./string_io.exe < data/string_io
+echo "string_io2:" && ./string_io2.exe < data/string_io
+echo "word_echo:" && ./word_echo.exe < data/word_echo
+echo "getline:" && ./getline.exe < data/word_echo
+echo "getline2:" && ./getline2.exe < data/word_echo
+echo "getline3:" && ./getline3.exe < data/word_echo
+
+../noinput string_size.exe
+../noinput strcompare.exe
+../noinput string_add.exe
+../noinput cctype.exe
+../noinput char_repl.exe
+
+echo "hexify:" && ./hexify.exe < data/hexify
+
+../noinput vec_decls.exe
+../noinput square.exe
+
+echo "vec_scores:" && ./vec_scores.exe < data/grades
+
+../noinput binary_search.exe
+
+echo "array_scores:" && ./array_scores.exe < data/grades
+
+../noinput cstring_hdr.exe

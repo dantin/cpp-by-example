@@ -1,7 +1,6 @@
 #include <iostream>
 
-int main()
-{
+int main() {
     int a = 0, b = 0;
     decltype((a)) c = a;
     decltype(a = b) d = a;
