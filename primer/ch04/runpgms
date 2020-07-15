@@ -1,0 +1,3 @@
+#!/bin/bash
+
+../noinput unary_ops.exe
